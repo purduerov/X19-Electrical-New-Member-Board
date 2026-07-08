@@ -1,0 +1,8 @@
+(kicad_sch (version 20211123) (generator eeschema)
+  (uuid "00000000-0000-0000-0000-000060e6118b")
+  (paper "A4")
+  (title_block
+    (title "Purdue ROV Subsystem Board")
+    (company "Purdue ROV")
+  )
+)
