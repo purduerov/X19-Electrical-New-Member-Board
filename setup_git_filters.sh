@@ -19,4 +19,9 @@ git config filter.kicad_project_cleaner.smudge "cat"
 git config core.hooksPath .githooks
 echo "Git hooks path configured to .githooks"
 
-echo "Git filters and hooks configured successfully!"
+# 5. Automatic Submodule Updates Configuration
+git config submodule.recurse true
+git config checkout.recurse true
+echo "Git configured to automatically pull and update submodules recursively."
+
+echo "Git filters, hooks, and submodules configured successfully!"

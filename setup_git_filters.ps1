@@ -24,4 +24,9 @@ git config filter.kicad_project_cleaner.smudge "cat"
 git config core.hooksPath .githooks
 Write-Host "Git hooks path configured to .githooks" -ForegroundColor Green
 
-Write-Host "Git filters and hooks configured successfully! You can verify them with 'git config --list'." -ForegroundColor Green
+# 5. Automatic Submodule Updates Configuration
+git config submodule.recurse true
+git config checkout.recurse true
+Write-Host "Git configured to automatically pull and update submodules recursively." -ForegroundColor Green
+
+Write-Host "Git filters, hooks, and submodules configured successfully! You can verify them with 'git config --list'." -ForegroundColor Green
