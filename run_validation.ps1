@@ -8,6 +8,13 @@
     .\run_validation.ps1
 #>
 
+# Ensure Git clean filters are configured
+$schClean = git config --get filter.kicad_sch_cleaner.clean
+if (-not $schClean) {
+    Write-Host "KiCad Git clean filters are not configured. Running setup_git_filters.ps1..." -ForegroundColor Yellow
+    & .\setup_git_filters.ps1
+}
+
 # Ensure Docker is running
 if (-not (Get-Command "docker" -ErrorAction SilentlyContinue)) {
     Write-Error "Docker is not installed or not in the system PATH. Please install Docker Desktop to run local validation."

@@ -20,4 +20,8 @@ git config filter.kicad_pcb_cleaner.smudge "cat"
 git config filter.kicad_project_cleaner.clean "sed -E -e 's/^update=.*$/update=Date/g'"
 git config filter.kicad_project_cleaner.smudge "cat"
 
-Write-Host "Git filters configured successfully! You can verify them with 'git config --list'." -ForegroundColor Green
+# 4. Git Hooks Configuration
+git config core.hooksPath .githooks
+Write-Host "Git hooks path configured to .githooks" -ForegroundColor Green
+
+Write-Host "Git filters and hooks configured successfully! You can verify them with 'git config --list'." -ForegroundColor Green

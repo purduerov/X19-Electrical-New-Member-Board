@@ -3,6 +3,13 @@
 
 set -e
 
+# Ensure Git clean filters are configured
+SCH_CLEAN=$(git config --get filter.kicad_sch_cleaner.clean || true)
+if [ -z "$SCH_CLEAN" ]; then
+    echo "KiCad Git clean filters are not configured. Running setup_git_filters.sh..."
+    bash ./setup_git_filters.sh
+fi
+
 # Verify docker is installed
 if ! command -v docker &> /dev/null; then
     echo "Error: docker is not installed. Please install Docker to run local validation."
