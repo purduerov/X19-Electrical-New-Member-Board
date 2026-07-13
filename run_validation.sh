@@ -21,7 +21,7 @@ KIBOT_CONFIG="libs/pcb-devops/kibot_master.yaml"
 
 if [ ! -f "$KIBOT_CONFIG" ]; then
     echo "Local master config not found in submodules. Fetching latest from GitHub..."
-    curl -sSL https://raw.githubusercontent.com/purdue-rov/pcb-devops/main/kibot_master.yaml -o local_kibot.yaml
+    curl -sSL https://raw.githubusercontent.com/purduerov/pcb-devops/master/kibot_master.yaml -o local_kibot.yaml
     KIBOT_CONFIG="local_kibot.yaml"
 fi
 

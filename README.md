@@ -14,7 +14,7 @@ This is the central base template for starting any new hardware project at Purdu
 2. Name your new repository (e.g., `depth-sensor-board`) and click **Create repository**.
 3. Clone your new repository locally using the recursive flag to pull in the central library submodule:
    ```bash
-   git clone --recursive https://github.com/purdue-rov/YOUR-BOARD-REPO.git
+   git clone --recursive https://github.com/purduerov/YOUR-BOARD-REPO.git
    ```
 4. Open the template `.kicad_pro` project in KiCad and rename the files to match your project name.
 
