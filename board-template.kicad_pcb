@@ -1,0 +1,10 @@
+(kicad_pcb (version 20211123) (generator pcbnew)
+  (general
+    (thickness 1.6)
+  )
+  (paper "A4")
+  (title_block
+    (title "Purdue ROV Subsystem Board")
+    (company "Purdue ROV")
+  )
+)
