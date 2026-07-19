@@ -19,6 +19,12 @@ This is the central base template for starting any new hardware project at Purdu
     ```bash
     git clone --recursive https://github.com/purduerov/YOUR-BOARD-REPO.git
     ```
+    > [!TIP]
+    > **Forgot the `--recursive` flag or seeing missing/question-mark symbols in KiCad?**
+    > Run this command in your terminal inside the project directory to fetch the library:
+    > ```bash
+    > git submodule update --init --recursive
+    > ```
 4.  Open the template `.kicad_pro` project in KiCad and rename the files to match your project name.
 
 ---
