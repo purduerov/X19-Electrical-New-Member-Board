@@ -17,6 +17,7 @@ _autosave-*
 # KiBot / Output directories
 Generated_Outputs/
 Outputs/
+.pcb-devops-cache/
 
 # OS/Editor files
 .DS_Store
