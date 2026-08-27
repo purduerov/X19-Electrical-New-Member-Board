@@ -1,49 +1,57 @@
-# Purdue ROV X19 Electrical New Member Board
+# X19 Electrical New Member Board
 
-This repository contains the KiCad schematic and PCB layout for the Purdue ROV X19 Electrical New Member Onboarding Board project.
+Onboarding PCB project for new members joining the Purdue ROV electrical subteam. This board introduces team design practices in KiCad, covering schematic capture, component selection, layout rules, and our Git/CI workflow.
 
----
+## Getting Started
 
-## ⚡ Recommended Daily Workflow: 1-Click KiCad Launcher
+### 1. Clone the Repository
+Clone recursively so the central component library submodule is included:
+```bash
+git clone --recursive https://github.com/purduerov/X19-Electrical-New-Member-Board.git
+cd X19-Electrical-New-Member-Board
+```
 
-To ensure your local library is **always 100% up-to-date with new parts added by teammates** without ever needing to run manual Git commands:
+If you already cloned without `--recursive`, initialize the submodule:
+```bash
+git submodule update --init --recursive
+```
 
-### 🎯 **Double-Click `LAUNCH_KICAD.bat` to Start Work**
-* **Windows:** Double-click **`LAUNCH_KICAD.bat`** in your project folder.
-* **Mac / Linux:** Double-click **`LAUNCH_KICAD.sh`** (or run `./LAUNCH_KICAD.sh` in terminal).
+### 2. Configure Git Filters and Hooks
+Run the filter setup script to prevent local KiCad metadata (such as window coordinates and zoom settings) from creating git diff noise and merge conflicts:
 
-#### **What this script does for you automatically:**
-1. **Auto-Fetches Central Library Parts (0.5 seconds):** Silently connects to `purdue-rov-kicad-lib` on GitHub and pulls any new symbols, footprints, or 3D models added by teammates while you were away.
-2. **Eliminates Missing Symbol Question Marks:** Guarantees you never open KiCad with outdated or missing component definitions.
-3. **Launches KiCad:** Immediately opens `board-template.kicad_pro` in KiCad.
+- **Windows (PowerShell):**
+  ```powershell
+  .\setup_git_filters.ps1
+  ```
+- **macOS / Linux:**
+  ```bash
+  ./setup_git_filters.sh
+  ```
 
----
+### 3. Open the Project
+You can open `X19-Electrical-New-Member-Board.kicad_pro` directly in KiCad, or run the launcher script:
+- **Windows:** Double-click `LAUNCH_KICAD.bat`
+- **macOS / Linux:** Run `./LAUNCH_KICAD.sh`
 
-## 🔄 How Automated Library Syncing Works
+The launcher script updates the `purdue-rov-kicad-lib` submodule to latest `master` before launching KiCad.
 
-Even if you are working solo on your board repository and rarely run `git pull`, your central component library stays updated automatically through **3 layers of protection**:
+## Local Validation (KiBot / Docker)
 
-1. 🚀 **On KiCad Launch (`LAUNCH_KICAD.bat`):** Pulls the latest library symbols & footprints before opening your project.
-2. 🔄 **On Git Commit (`.githooks/pre-commit`):** Automatically fetches latest library commits right before completing any commit, updating your project's submodule pointer automatically.
-3. ☁️ **In GitHub Cloud (`auto-update-submodule.yml`):** GitHub Actions automatically syncs the library submodule on daily schedule or whenever new library parts are published.
+To run electrical rules checks (ERC), design rules checks (DRC), and generate manufacturing outputs locally:
 
----
+- **Windows:**
+  ```powershell
+  .\run_validation.ps1
+  ```
+- **macOS / Linux:**
+  ```bash
+  ./run_validation.sh
+  ```
 
-## 🚀 How to Clone & Work on the Board
+Outputs (PDF schematics, interactive BOMs, and Gerbers) are generated in `Generated_Outputs/`.
 
-1. Clone the repository recursively:
-   ```bash
-   git clone --recursive https://github.com/purduerov/X19-Electrical-New-Member-Board.git
-   ```
-2. Configure local Git clean filters and hooks:
-   * **Windows (PowerShell):** `.\setup_git_filters.ps1`
-   * **Linux / macOS:** `./setup_git_filters.sh`
-3. Double-click `LAUNCH_KICAD.bat` to begin working on your board!
+## Design Guidelines
 
----
-
-## ➕ Adding Parts to the Central Library
-
-To add a new component downloaded online (SnapEDA, DigiKey, Ultra Librarian, LCSC, etc.):
-1. Open `libs/purdue-rov-kicad-lib` and double-click **`IMPORT_PART_WIZARD.bat`** (or `IMPORT_PART_WIZARD.sh`).
-2. Use the 1-Click Desktop GUI / Downloads Watcher to import, validate compliance, and push to master!
+- Isolation and spacing rules are configured in `custom_rules.kicad_dru`.
+- Keep appropriate clearance (minimum 2.0 mm) between high-power thruster traces and 3.3V/5V logic nets.
+- Use parts from the central library (`libs/purdue-rov-kicad-lib`). If a new component is needed, follow the library contribution process in the submodule.
