@@ -1,3 +1,5 @@
 (fp_lib_table
-  (lib (name "ROV_Footprints")(type "KiCad")(uri "${KIPRJMOD}/libs/purdue-rov-kicad-lib/Footprints/rov_parts.pretty")(options "")(descr "Purdue ROV Central Footprints"))
+	(version 7)
+	(lib (name "ROV_Footprints") (type "KiCad") (uri "${KICAD_PROJECT_DIR}/libs/purdue-rov-kicad-lib/Footprints/rov_parts.pretty") (options "") (descr "Purdue ROV Central Footprints"))
+	(lib (name "AZ1117IH_3_3TRG1") (type "KiCad") (uri "C:/Users/fPhas/Downloads/X17-Pi-Shield-master/X17-Pi-Shield-master/Libraries/AZ1117IH_3_3TRG1/AZ1117IH_3_3TRG1.pretty") (options "") (descr ""))
 )

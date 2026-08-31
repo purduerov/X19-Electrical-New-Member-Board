@@ -256,7 +256,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "X19-Electrical-New-Member-Board.kicad_pro",
+    "filename": "board-template.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -415,22 +415,18 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "X19-Electrical-New-Member-Board.kicad_sch",
-        "name": "X19-Electrical-New-Member-Board",
+        "filename": "board-template.kicad_sch",
+        "name": "board-template",
         "uuid": "00000000-0000-0000-0000-000060e6118b"
       }
     ],
-    "used_designators": "U1-5,#FLG1-4,L1,D1,#PWR1-7,#PWR11,#PWR14,C1-4,PS1,JP1-2",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
     [
       "00000000-0000-0000-0000-000060e6118b",
-      "X19-Electrical-New-Member-Board"
-    ],
-    [
-      "85b09d35-9b60-4f88-905b-e26bc74c245e",
-      "Power"
+      "board-template"
     ]
   ],
   "text_variables": {},

@@ -9,4 +9,218 @@
 		(company "Purdue ROV")
 	)
 	(lib_symbols)
+	(sheet
+		(at 124.46 68.58)
+		(size 17.78 21.59)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "7020d2b0-8bf2-4902-bfd9-8e63294b9fc0")
+		(property "Sheetname" "Sensors"
+			(at 124.46 67.8684 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "snesors.kicad_sch"
+			(at 124.46 90.7546 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "INT" input
+			(at 124.46 72.39 180)
+			(uuid "4dbd1093-0caa-4dc0-9f63-4c2ed1e60f76")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "LEAK" input
+			(at 124.46 77.47 180)
+			(uuid "350b332c-64f8-46ab-b3b7-52aa57f5200c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SCL" input
+			(at 124.46 82.55 180)
+			(uuid "e00331cb-d603-47ef-8512-e4b7ec59028f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SDA" input
+			(at 124.46 86.36 180)
+			(uuid "573ebe58-13c5-4d32-a94f-d44c967499f8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "X19-Electrical-New-Member-Board"
+				(path "/00000000-0000-0000-0000-000060e6118b"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 165.1 69.85)
+		(size 43.18 33.02)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "81d0fe2f-d7d3-4620-b951-ee9539e86d2a")
+		(property "Sheetname" "STM"
+			(at 165.1 69.1384 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "STM.kicad_sch"
+			(at 165.1 103.4546 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "X19-Electrical-New-Member-Board"
+				(path "/00000000-0000-0000-0000-000060e6118b"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 69.85 68.58)
+		(size 31.75 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "85b09d35-9b60-4f88-905b-e26bc74c245e")
+		(property "Sheetname" "Power"
+			(at 69.85 67.8684 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 69.85 89.4846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "ALERT" input
+			(at 101.6 71.12 0)
+			(uuid "2fac1d46-0932-4ce3-a3e7-25949587936a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SCL" input
+			(at 101.6 76.2 0)
+			(uuid "7a102f88-740f-4cc5-88ed-f1acf1529bac")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SDA" input
+			(at 101.6 80.01 0)
+			(uuid "82a75e12-1e75-4b36-8bef-c8efa92720b5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "X19-Electrical-New-Member-Board"
+				(path "/00000000-0000-0000-0000-000060e6118b"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
 )

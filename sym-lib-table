@@ -1,3 +1,8 @@
 (sym_lib_table
-  (lib (name "ROV_Symbols")(type "KiCad")(uri "${KIPRJMOD}/libs/purdue-rov-kicad-lib/Symbols/rov_parts.kicad_sym")(options "")(descr "Purdue ROV Central Symbols"))
+	(version 7)
+	(lib (name "ROV_Symbols") (type "KiCad") (uri "${KIPRJMOD}/libs/purdue-rov-kicad-lib/Symbols/rov_parts.kicad_sym") (options "") (descr "Purdue ROV Central Symbols"))
+	(lib (name "5to3v3LDO") (type "KiCad") (uri "C:/Users/fPhas/Downloads/X17-Pi-Shield-master/X17-Pi-Shield-master/Libraries/AZ1117IH_3_3TRG1/AZ1117IH_3_3TRG1.kicad_sym") (options "") (descr ""))
+	(lib (name "IRS-5_10-Q12P-C") (type "KiCad") (uri "C:/Users/fPhas/Downloads/LIB_IRS-5_10-Q12P-C/IRS-5_10-Q12P-C/KiCad/IRS-5_10-Q12P-C.kicad_sym") (options "") (descr ""))
+	(lib (name "USBC_C-31-M-12") (type "KiCad") (uri "C:/Users/fPhas/Downloads/ul_TYPE-C-31-M-12/KiCADv6/USBC_C-31-M-12.kicad_sym") (options "") (descr ""))
+	(lib (name "UJ20-C-H-G-SMT-1-P16-TR") (type "KiCad") (uri "C:/Users/fPhas/Downloads/UJ20_C_H_G_SMT_1_P16_TR/UJ20-C-H-G-SMT-1-P16-TR.kicad_sym") (options "") (descr ""))
 )
