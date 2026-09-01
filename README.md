@@ -2,6 +2,13 @@
 
 Onboarding PCB project for new members joining the Purdue ROV electrical subteam. This board introduces team design practices in KiCad, covering schematic capture, component selection, layout rules, and our Git/CI workflow.
 
+## Schematic Architecture
+
+The project is divided into modular hierarchical sheets:
+- `power.kicad_sch`: Voltage regulation (LM2596 buck converter, 3.3V LDO), power rail distribution, and INA260 power/current monitoring.
+- `snesors.kicad_sch`: Sensor interfaces, ADT7410 temperature sensor, leak probe detector circuitry, and JST-GH telemetry connectors.
+- `STM.kicad_sch`: STM32F0 microcontroller core, MAX7375 oscillator, reset circuitry, SWD programming header, and USB Type-C interface.
+
 ## Getting Started
 
 ### 1. Clone the Repository
@@ -35,6 +42,16 @@ You can open `X19-Electrical-New-Member-Board.kicad_pro` directly in KiCad, or r
 
 The launcher script updates the `purdue-rov-kicad-lib` submodule to latest `master` before launching KiCad.
 
+## Central Component Library
+
+The project links to the central `purdue-rov-kicad-lib` submodule mapped across 6 categories in `sym-lib-table` and `fp-lib-table`:
+- `rov_passives`: Resistors, capacitors, inductors, crystals
+- `rov_power`: Voltage regulators, buck/boost converters, MOSFETs, diodes
+- `rov_logic`: MCUs, logic ICs, op-amps, drivers, level shifters
+- `rov_connectors`: Power terminals, XT60, headers, USB, JST connectors
+- `rov_sensors`: IMUs, temperature, pressure sensors
+- `rov_mech`: Mounting holes, standoffs, test points
+
 ## Local Validation (KiBot / Docker)
 
 To run electrical rules checks (ERC), design rules checks (DRC), and generate manufacturing outputs locally:
@@ -55,3 +72,4 @@ Outputs (PDF schematics, interactive BOMs, and Gerbers) are generated in `Genera
 - Isolation and spacing rules are configured in `custom_rules.kicad_dru`.
 - Keep appropriate clearance (minimum 2.0 mm) between high-power thruster traces and 3.3V/5V logic nets.
 - Use parts from the central library (`libs/purdue-rov-kicad-lib`). If a new component is needed, follow the library contribution process in the submodule.
+
