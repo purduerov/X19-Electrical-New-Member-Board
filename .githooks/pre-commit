@@ -23,8 +23,12 @@ if [ -z "$SCH_CLEAN" ]; then
     SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
     REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
     
-    if [ -f "$REPO_ROOT/setup_git_filters.sh" ]; then
+    if [ -f "$REPO_ROOT/scripts/setup_git_filters.sh" ]; then
+        bash "$REPO_ROOT/scripts/setup_git_filters.sh"
+    elif [ -f "$REPO_ROOT/setup_git_filters.sh" ]; then
         bash "$REPO_ROOT/setup_git_filters.sh"
+    elif [ -f "$REPO_ROOT/scripts/setup_git_filters.ps1" ]; then
+        powershell.exe -File "$REPO_ROOT/scripts/setup_git_filters.ps1"
     elif [ -f "$REPO_ROOT/setup_git_filters.ps1" ]; then
         powershell.exe -File "$REPO_ROOT/setup_git_filters.ps1"
     fi

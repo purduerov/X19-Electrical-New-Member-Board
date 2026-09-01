@@ -28,11 +28,11 @@ Run the filter setup script to prevent local KiCad metadata (such as window coor
 
 - **Windows (PowerShell):**
   ```powershell
-  .\setup_git_filters.ps1
+  .\scripts\setup_git_filters.ps1
   ```
 - **macOS / Linux:**
   ```bash
-  ./setup_git_filters.sh
+  ./scripts/setup_git_filters.sh
   ```
 
 ### 3. Open the Project
@@ -58,12 +58,13 @@ To run electrical rules checks (ERC), design rules checks (DRC), and generate ma
 
 - **Windows:**
   ```powershell
-  .\run_validation.ps1
+  .\scripts\run_validation.ps1
   ```
 - **macOS / Linux:**
   ```bash
-  ./run_validation.sh
+  ./scripts/run_validation.sh
   ```
+
 
 Outputs (PDF schematics, interactive BOMs, and Gerbers) are generated in `Generated_Outputs/`.
 

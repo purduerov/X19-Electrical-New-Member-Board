@@ -29,6 +29,12 @@
 				(font
 					(size 1.524 1.524)
 				)
+		(property "Category" "Power" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		(property "MPN" "AZ1117IH-3.3TRG1" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		(property "Manufacturer" "Diodes Incorporated" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		(property "DigiKey" "AZ1117IH-3.3TRG1DICT-ND" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AZ1117I.pdf" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		(property "Temp_Range" "-40°C to 125°C" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
 			)
 		)
 		(property "Footprint" "SOT223_AZ1117I_6P5X3P5_DIO"
@@ -43,16 +49,6 @@
 				)
 			)
 		)
-		(property "Datasheet" "AZ1117IH-3.3TRG1"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
 			)
 		)
 		(property "Description" ""
@@ -229,6 +225,12 @@
 				(font
 					(size 1.27 1.27)
 				)
+		(property "Category" "Power" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		(property "MPN" "IRS-5/10-Q12P-C" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		(property "Manufacturer" "Murata Power Solutions" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		(property "DigiKey" "490-14197-ND" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		(property "Datasheet" "https://www.murata.com/products/productdata/8807028457502/kmp_irs.pdf" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		(property "Temp_Range" "-40°C to 85°C" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
 				(justify left top)
 			)
 		)
@@ -244,15 +246,6 @@
 				(justify left top)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.ph/ProductDetail/Murata-Power-Solutions/IRS-5-10-Q12P-C?qs=PqoDHHvF64%2FRMwDquUqfvQ%3D%3D"
-			(at 34.29 -194.92 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 				(justify left top)
 			)
 		)
@@ -513,6 +506,12 @@
 				(font
 					(size 1.524 1.524)
 				)
+		(property "Category" "Connectors" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		(property "MPN" "TYPE-C-31-M-12" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		(property "Manufacturer" "Korean Hroparts Elec" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		(property "DigiKey" "N/A" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1912111437_Korean-Hroparts-Elec-TYPE-C-31-M-12_C165948.pdf" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		(property "Temp_Range" "-25°C to 85°C" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
 			)
 		)
 		(property "Footprint" "CONN12_C-31-M-12_HRO"
@@ -527,16 +526,6 @@
 				)
 			)
 		)
-		(property "Datasheet" "TYPE-C-31-M-12"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
 			)
 		)
 		(property "Description" ""
@@ -1526,6 +1515,12 @@
 				(font
 					(size 1.27 1.27)
 				)
+		(property "Category" "Connectors" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		(property "MPN" "UJ20-C-H-G-SMT-1-P16-TR" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		(property "Manufacturer" "Same Sky" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		(property "DigiKey" "102-UJ20-C-H-G-SMT-1-P16-TR-ND" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		(property "Datasheet" "https://www.sameskydevices.com/product/resource/supplyframe-pdf/uj20-c-h-g-smt-1-p16-tr.pdf" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		(property "Temp_Range" "-25°C to 85°C" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
 				(justify left top)
 			)
 		)
@@ -1541,15 +1536,6 @@
 				(justify bottom)
 			)
 		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(property "Description" ""
