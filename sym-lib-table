@@ -1,8 +1,17 @@
 (sym_lib_table
+<<<<<<< HEAD
 	(version 7)
 	(lib (name "ROV_Symbols") (type "KiCad") (uri "${KIPRJMOD}/libs/purdue-rov-kicad-lib/Symbols/rov_parts.kicad_sym") (options "") (descr "Purdue ROV Central Symbols"))
 	(lib (name "5to3v3LDO") (type "KiCad") (uri "C:/Users/fPhas/Downloads/X17-Pi-Shield-master/X17-Pi-Shield-master/Libraries/AZ1117IH_3_3TRG1/AZ1117IH_3_3TRG1.kicad_sym") (options "") (descr ""))
 	(lib (name "IRS-5_10-Q12P-C") (type "KiCad") (uri "C:/Users/fPhas/Downloads/LIB_IRS-5_10-Q12P-C/IRS-5_10-Q12P-C/KiCad/IRS-5_10-Q12P-C.kicad_sym") (options "") (descr ""))
 	(lib (name "USBC_C-31-M-12") (type "KiCad") (uri "C:/Users/fPhas/Downloads/ul_TYPE-C-31-M-12/KiCADv6/USBC_C-31-M-12.kicad_sym") (options "") (descr ""))
 	(lib (name "UJ20-C-H-G-SMT-1-P16-TR") (type "KiCad") (uri "C:/Users/fPhas/Downloads/UJ20_C_H_G_SMT_1_P16_TR/UJ20-C-H-G-SMT-1-P16-TR.kicad_sym") (options "") (descr ""))
+=======
+  (lib (name "rov_passives")(type "KiCad")(uri "${KIPRJMOD}/libs/purdue-rov-kicad-lib/Symbols/rov_passives.kicad_sym")(options "")(descr "Purdue ROV Passives Symbols"))
+  (lib (name "rov_power")(type "KiCad")(uri "${KIPRJMOD}/libs/purdue-rov-kicad-lib/Symbols/rov_power.kicad_sym")(options "")(descr "Purdue ROV Power Symbols"))
+  (lib (name "rov_logic")(type "KiCad")(uri "${KIPRJMOD}/libs/purdue-rov-kicad-lib/Symbols/rov_logic.kicad_sym")(options "")(descr "Purdue ROV Logic Symbols"))
+  (lib (name "rov_connectors")(type "KiCad")(uri "${KIPRJMOD}/libs/purdue-rov-kicad-lib/Symbols/rov_connectors.kicad_sym")(options "")(descr "Purdue ROV Connectors Symbols"))
+  (lib (name "rov_sensors")(type "KiCad")(uri "${KIPRJMOD}/libs/purdue-rov-kicad-lib/Symbols/rov_sensors.kicad_sym")(options "")(descr "Purdue ROV Sensors Symbols"))
+  (lib (name "rov_mech")(type "KiCad")(uri "${KIPRJMOD}/libs/purdue-rov-kicad-lib/Symbols/rov_mech.kicad_sym")(options "")(descr "Purdue ROV Mechanical Symbols"))
+>>>>>>> 4ca03e45f7d532333745d0ca4a7c23d5b46e4d3b
 )

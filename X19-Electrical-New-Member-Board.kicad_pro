@@ -420,7 +420,7 @@
         "uuid": "00000000-0000-0000-0000-000060e6118b"
       }
     ],
-    "used_designators": "U1-5,#FLG1-4,L1,D1,#PWR1-7,#PWR11,#PWR14,C1-4,PS1,JP1-2",
+    "used_designators": "#FLG4-5,R6-12,J8-18,D3-6,#PWR23-53,#PWR57-58,C8-17,U6,Y1,SW2",
     "variants": []
   },
   "sheets": [
@@ -431,6 +431,14 @@
     [
       "85b09d35-9b60-4f88-905b-e26bc74c245e",
       "Power"
+    ],
+    [
+      "7020d2b0-8bf2-4902-bfd9-8e63294b9fc0",
+      "Sensors"
+    ],
+    [
+      "81d0fe2f-d7d3-4620-b951-ee9539e86d2a",
+      "STM"
     ]
   ],
   "text_variables": {},
