@@ -1,14 +1,8 @@
 (fp_lib_table
-<<<<<<< HEAD
-	(version 7)
-	(lib (name "ROV_Footprints") (type "KiCad") (uri "${KICAD_PROJECT_DIR}/libs/purdue-rov-kicad-lib/Footprints/rov_parts.pretty") (options "") (descr "Purdue ROV Central Footprints"))
-	(lib (name "AZ1117IH_3_3TRG1") (type "KiCad") (uri "C:/Users/fPhas/Downloads/X17-Pi-Shield-master/X17-Pi-Shield-master/Libraries/AZ1117IH_3_3TRG1/AZ1117IH_3_3TRG1.pretty") (options "") (descr ""))
-=======
   (lib (name "rov_passives")(type "KiCad")(uri "${KIPRJMOD}/libs/purdue-rov-kicad-lib/Footprints/rov_passives.pretty")(options "")(descr "Purdue ROV Passives Footprints"))
   (lib (name "rov_power")(type "KiCad")(uri "${KIPRJMOD}/libs/purdue-rov-kicad-lib/Footprints/rov_power.pretty")(options "")(descr "Purdue ROV Power Footprints"))
   (lib (name "rov_logic")(type "KiCad")(uri "${KIPRJMOD}/libs/purdue-rov-kicad-lib/Footprints/rov_logic.pretty")(options "")(descr "Purdue ROV Logic Footprints"))
   (lib (name "rov_connectors")(type "KiCad")(uri "${KIPRJMOD}/libs/purdue-rov-kicad-lib/Footprints/rov_connectors.pretty")(options "")(descr "Purdue ROV Connectors Footprints"))
   (lib (name "rov_sensors")(type "KiCad")(uri "${KIPRJMOD}/libs/purdue-rov-kicad-lib/Footprints/rov_sensors.pretty")(options "")(descr "Purdue ROV Sensors Footprints"))
   (lib (name "rov_mech")(type "KiCad")(uri "${KIPRJMOD}/libs/purdue-rov-kicad-lib/Footprints/rov_mech.pretty")(options "")(descr "Purdue ROV Mechanical Footprints"))
->>>>>>> 4ca03e45f7d532333745d0ca4a7c23d5b46e4d3b
 )
