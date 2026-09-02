@@ -45,7 +45,7 @@ To browse parts, inspect footprints, edit properties, or add/delete components i
 The board uses a hierarchical schematic design structured across sub-sheets:
 - `X19-Electrical-New-Member-Board.kicad_sch`: Root top-level sheet.
 - `power.kicad_sch`: Voltage regulation circuitry (5V buck converter, 3.3V LDO).
-- `snesors.kicad_sch`: Sensor interfaces and environmental telemetry.
+- `sensors.kicad_sch`: Sensor interfaces and environmental telemetry.
 - `STM.kicad_sch`: STM32 MCU, clock crystal, bypass capacitors, SWD programming header, and boot logic.
 
 ## Automated CI/CD & DevOps Preflight Checks

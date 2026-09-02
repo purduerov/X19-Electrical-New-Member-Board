@@ -36,7 +36,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "snesors.kicad_sch"
+		(property "Sheetfile" "sensors.kicad_sch"
 			(at 124.46 90.7546 0)
 			(show_name no)
 			(do_not_autoplace no)
