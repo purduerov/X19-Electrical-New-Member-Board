@@ -17,13 +17,11 @@ _autosave-*
 # KiBot / Output directories
 Generated_Outputs/
 Outputs/
-.pcb-devops-cache/
-
-# Backups & history
-*-backups/
-.history/
 
 # OS/Editor files
 .DS_Store
 Thumbs.db
+
+# Central devops cache
+.pcb-devops-cache/
 
