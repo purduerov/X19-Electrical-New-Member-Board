@@ -1,8 +1,8 @@
-name: 🔄 Auto-Update Library Submodule
+name: Auto-Update Library Submodule
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Runs daily at midnight UTC
+    - cron: '0 * * * *'  # Runs hourly as autonomous fallback
   workflow_dispatch:      # Allows manual trigger button in GitHub Actions UI
   repository_dispatch:    # Triggered automatically when purdue-rov-kicad-lib updates
     types: [update-library]
@@ -18,7 +18,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          submodules: recursive
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
 
@@ -26,7 +25,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git submodule update --remote --recursive
+          git submodule update --init --remote libs/purdue-rov-kicad-lib
           
       - name: Commit and Push if updated
         run: |
