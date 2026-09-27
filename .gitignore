@@ -30,3 +30,6 @@ Thumbs.db
 
 # KiCad project backup archives
 *-backups/
+
+# Editor local history
+.history/
